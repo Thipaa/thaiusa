@@ -1,0 +1,330 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  background-color: white;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #000000;
+  font-family: "Roboto", "sans-serif";
+  font-size: 16px;
+  line-height: 22px;
+  background: #F1F1F1;
+}
+
+.show-menu {
+  display: block !important;
+}
+
+/* code begin here */
+
+/* navagator */
+.hidden-nav {
+  display: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: brown;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  width: 20%; 
+  font-family: 'Gugi', cursive;
+  font-size: 30px;
+  color: #F1F1F1;
+  margin-top: 5px;
+} 
+
+.fa-star {
+  font-size: 20px;
+  vertical-align: 20%;
+  color: red;
+}
+
+
+.nav-top {
+  float: right;
+  width: 80%;
+}
+
+ul {
+  text-align: right;
+  margin-right: 60px;
+} 
+
+
+ul li {
+  display: inline;
+  padding: 0 15px;
+  border-right: #F1F1F1 solid 1px;
+  
+}
+
+ul li:last-child {
+  border-right: 0;
+}
+
+
+
+ul li a {
+  text-decoration: none;
+  color: #F1F1F1;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 23px;
+}
+
+
+
+/* Menu*/
+
+
+.main {
+  width: 100%;
+  padding-top: 40px;
+  
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  color: brown;
+  font-size: 40px;
+  margin: 70px auto 10px auto;
+}
+h2 .title {
+  display: inline-block;
+  width: 100%;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 30px;
+    color:#000000;
+    padding: 40px 0 10px 0;
+  }
+
+ h3:last-child {
+   padding-bottom: 80px;
+ } 
+
+p {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  text-align: center;
+  font-size: 24px;
+
+}
+
+price {
+  color: brown;
+}
+
+.fa-leaf {
+  color: green;
+}
+
+.footer {
+  padding: 50px 0 0 0;
+  font-size: 20px;
+}
+
+.con{
+  padding: 10px;
+}
+
+.fa-phone-square {
+  color: green;
+}
+
+
+.fa-facebook:hover {
+
+    opacity: 0.7;
+ } 
+  
+
+ .fa-facebook {
+  padding: 15px;
+  font-size: 30px;
+  width: 18px;
+  text-align: center;
+  text-decoration: none;
+  background: #3B5998;
+  color: white;
+  border-radius: 50%;
+  
+  }
+
+  .fa-instagram {
+  text-decoration: none;
+  padding: 15px;
+  width: 18px;
+  font-size: 35px;
+  text-align: center;
+  background: palevioletred;
+  color: white;
+  border-radius: 50%;
+  }
+
+  .fa-instagram:hover {
+  opacity: 0.7;
+ } 
+
+  .soc {
+    text-align: center;
+  }
+
+
+.credit {
+  padding: 100px 0 0 0;
+  font-size: 20px;
+}
+
+.burger {
+  display: none;
+}
+
+  
+
+  /* Mobile View */
+
+@media only screen and (max-width: 768px) {
+
+
+.menu {
+  font-size: 50px;
+  color: brown;
+  background-color: #F1F1F1;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 50px;
+  background-color: brown;
+  color: #F1F1F1;
+} 
+
+p {
+  line-height: 30px;
+}
+
+h3 {
+  line-height: 35px;
+}
+
+.body {
+ width: 100%;
+} 
+.main{
+ width: 100%;
+}
+
+.header {
+  width: 100%;
+}      
+.logo{
+width: 50%;
+font-size: 20px;
+padding-left: 8px;
+}
+.fa-star {
+  font-size: 16px;
+}
+
+.wrapper {
+  margin: 0 1em;
+}
+
+ul li {
+  border: none;
+  display: block;
+  overflow: hidden;
+  font-size: 60px;
+}
+
+ul {
+  margin: 30px 20px 15px 0;
+}
+
+.burger {
+  float: right;
+  margin-right: 20px;
+  color: #F1F1F1;
+  font-size: 30px;
+  display: inline;
+
+}
+
+.nav-top {
+  width: 100%;
+  float: right;
+}
+
+#hid-nav {
+  display: none;
+}
+
+      
+}
+
