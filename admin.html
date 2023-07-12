@@ -11,10 +11,55 @@
 <body>
   <div class="container">
     <h2>Login</h2>
-    <form>
-      <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
-      <button type="submit">Login</button>
+    <?php
+    session_start();
+
+    // Function to verify the owner's credentials
+    function verifyCredentials($username, $password)
+    {
+      // Replace with your actual owner's username and password
+      $ownerUsername = 'owner';
+      $ownerPassword = 'password';
+
+      // Verify the entered credentials
+      if ($username === $ownerUsername && $password === $ownerPassword) {
+        return true;
+      }
+
+      return false;
+    }
+
+    // Check if the login form is submitted
+    if (isset($_POST['submit'])) {
+      $username = $_POST['patra'];
+      $password = $_POST['112233'];
+
+      // Verify the entered credentials
+      if (verifyCredentials($username, $password)) {
+        // Authentication successful, set session variables
+        $_SESSION['authenticated'] = true;
+        $_SESSION['username'] = $username;
+
+        // Redirect to the menu editing page or any other authorized page
+        header('Location: menu_edit.php');
+        exit();
+      } else {
+        // Invalid credentials, display an error message
+        $errorMessage = 'Invalid username or password';
+      }
+    }
+    ?>
+
+    <?php if (isset($errorMessage)) { ?>
+      <p style="color: red;"><?php echo $errorMessage; ?></p>
+    <?php } ?>
+
+    <form method="POST" action="">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit" name="submit">Login</button>
     </form>
   </div>
 </body>
+
+</html>
