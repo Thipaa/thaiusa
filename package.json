@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-      "lite": "lite-server",
-      "start": "npm run lite"
+    "lite": "lite-server",
+    "start": "npm run lite"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "lite-server": "^2.6.1"
   }
 }
