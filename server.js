@@ -15,7 +15,7 @@ app.post('/login', (req, res) => {
   const { username, password } = req.body;
 
   // Replace with your own validation logic
-  if (username === 'patra' && password === '112233') {
+  if (username === 'pp' && password === 'uu') {
     res.send('Login successful');
   } else {
     res.status(401).send('Invalid username or password');
